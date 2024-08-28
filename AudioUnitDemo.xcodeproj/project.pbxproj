@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B87CE7911515E1E9E470CA6 /* Pods_AudioUnitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F38C4D855094059E926FC /* Pods_AudioUnitDemo.framework */; };
 		BEC1C0EB2C7F0E0E005BCFEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1C0EA2C7F0E0E005BCFEB /* AppDelegate.swift */; };
 		BEC1C0ED2C7F0E0E005BCFEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1C0EC2C7F0E0E005BCFEB /* SceneDelegate.swift */; };
 		BEC1C0EF2C7F0E0E005BCFEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1C0EE2C7F0E0E005BCFEB /* ViewController.swift */; };
 		BEC1C0F22C7F0E0E005BCFEB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BEC1C0F12C7F0E0E005BCFEB /* Base */; };
 		BEC1C0F42C7F0E0F005BCFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC1C0F32C7F0E0F005BCFEB /* Assets.xcassets */; };
 		BEC1C0F72C7F0E0F005BCFEB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BEC1C0F62C7F0E0F005BCFEB /* Base */; };
+		BEC1C1002C7F0F8F005BCFEB /* AudioStreamPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1C0FF2C7F0F8F005BCFEB /* AudioStreamPlayer.swift */; };
+		BEC1C1022C7F0FAF005BCFEB /* AudioFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1C1012C7F0FAF005BCFEB /* AudioFileReader.swift */; };
+		BEC1C1042C7F0FC5005BCFEB /* AudioUnitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1C1032C7F0FC5005BCFEB /* AudioUnitManager.swift */; };
+		BEC1C10F2C7F1679005BCFEB /* PCMResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BEC1C10E2C7F1679005BCFEB /* PCMResource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A5D1A5677237847C1B2DBAA /* Pods-AudioUnitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioUnitDemo.release.xcconfig"; path = "Target Support Files/Pods-AudioUnitDemo/Pods-AudioUnitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4C5F38C4D855094059E926FC /* Pods_AudioUnitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioUnitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F4ED6755D5628F13C016EB /* Pods-AudioUnitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioUnitDemo.debug.xcconfig"; path = "Target Support Files/Pods-AudioUnitDemo/Pods-AudioUnitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BEC1C0E72C7F0E0E005BCFEB /* AudioUnitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioUnitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC1C0EA2C7F0E0E005BCFEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEC1C0EC2C7F0E0E005BCFEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		BEC1C0F32C7F0E0F005BCFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEC1C0F62C7F0E0F005BCFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEC1C0F82C7F0E0F005BCFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC1C0FF2C7F0F8F005BCFEB /* AudioStreamPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioStreamPlayer.swift; sourceTree = "<group>"; };
+		BEC1C1012C7F0FAF005BCFEB /* AudioFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileReader.swift; sourceTree = "<group>"; };
+		BEC1C1032C7F0FC5005BCFEB /* AudioUnitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitManager.swift; sourceTree = "<group>"; };
+		BEC1C10E2C7F1679005BCFEB /* PCMResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PCMResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B87CE7911515E1E9E470CA6 /* Pods_AudioUnitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		715493FDCD4D4E18EA6AAF2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F38C4D855094059E926FC /* Pods_AudioUnitDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9478C4D9AFDA5C45107738D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73F4ED6755D5628F13C016EB /* Pods-AudioUnitDemo.debug.xcconfig */,
+				4A5D1A5677237847C1B2DBAA /* Pods-AudioUnitDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BEC1C0DE2C7F0E0E005BCFEB = {
 			isa = PBXGroup;
 			children = (
 				BEC1C0E92C7F0E0E005BCFEB /* AudioUnitDemo */,
 				BEC1C0E82C7F0E0E005BCFEB /* Products */,
+				9478C4D9AFDA5C45107738D7 /* Pods */,
+				715493FDCD4D4E18EA6AAF2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +88,43 @@
 		BEC1C0E92C7F0E0E005BCFEB /* AudioUnitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				BEC1C0EA2C7F0E0E005BCFEB /* AppDelegate.swift */,
-				BEC1C0EC2C7F0E0E005BCFEB /* SceneDelegate.swift */,
-				BEC1C0EE2C7F0E0E005BCFEB /* ViewController.swift */,
+				BEC1C1062C7F1110005BCFEB /* Resource */,
+				BEC1C1052C7F10EF005BCFEB /* Classes */,
+				BEC1C0FE2C7F0F35005BCFEB /* PCMStreamPlayer */,
 				BEC1C0F02C7F0E0E005BCFEB /* Main.storyboard */,
 				BEC1C0F32C7F0E0F005BCFEB /* Assets.xcassets */,
 				BEC1C0F52C7F0E0F005BCFEB /* LaunchScreen.storyboard */,
 				BEC1C0F82C7F0E0F005BCFEB /* Info.plist */,
 			);
 			path = AudioUnitDemo;
+			sourceTree = "<group>";
+		};
+		BEC1C0FE2C7F0F35005BCFEB /* PCMStreamPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				BEC1C0FF2C7F0F8F005BCFEB /* AudioStreamPlayer.swift */,
+				BEC1C1012C7F0FAF005BCFEB /* AudioFileReader.swift */,
+				BEC1C1032C7F0FC5005BCFEB /* AudioUnitManager.swift */,
+			);
+			path = PCMStreamPlayer;
+			sourceTree = "<group>";
+		};
+		BEC1C1052C7F10EF005BCFEB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BEC1C0EA2C7F0E0E005BCFEB /* AppDelegate.swift */,
+				BEC1C0EC2C7F0E0E005BCFEB /* SceneDelegate.swift */,
+				BEC1C0EE2C7F0E0E005BCFEB /* ViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BEC1C1062C7F1110005BCFEB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BEC1C10E2C7F1679005BCFEB /* PCMResource.bundle */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEC1C0FB2C7F0E0F005BCFEB /* Build configuration list for PBXNativeTarget "AudioUnitDemo" */;
 			buildPhases = (
+				688209DE62EC91B44F38D910 /* [CP] Check Pods Manifest.lock */,
 				BEC1C0E32C7F0E0E005BCFEB /* Sources */,
 				BEC1C0E42C7F0E0E005BCFEB /* Frameworks */,
 				BEC1C0E52C7F0E0E005BCFEB /* Resources */,
+				1E2F4283982F5FD00888B470 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +189,54 @@
 			files = (
 				BEC1C0F42C7F0E0F005BCFEB /* Assets.xcassets in Resources */,
 				BEC1C0F72C7F0E0F005BCFEB /* Base in Resources */,
+				BEC1C10F2C7F1679005BCFEB /* PCMResource.bundle in Resources */,
 				BEC1C0F22C7F0E0E005BCFEB /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E2F4283982F5FD00888B470 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudioUnitDemo/Pods-AudioUnitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudioUnitDemo/Pods-AudioUnitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AudioUnitDemo/Pods-AudioUnitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		688209DE62EC91B44F38D910 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioUnitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BEC1C0E32C7F0E0E005BCFEB /* Sources */ = {
@@ -139,7 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC1C0EF2C7F0E0E005BCFEB /* ViewController.swift in Sources */,
+				BEC1C1002C7F0F8F005BCFEB /* AudioStreamPlayer.swift in Sources */,
 				BEC1C0EB2C7F0E0E005BCFEB /* AppDelegate.swift in Sources */,
+				BEC1C1022C7F0FAF005BCFEB /* AudioFileReader.swift in Sources */,
+				BEC1C1042C7F0FC5005BCFEB /* AudioUnitManager.swift in Sources */,
 				BEC1C0ED2C7F0E0E005BCFEB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,12 +395,14 @@
 		};
 		BEC1C0FC2C7F0E0F005BCFEB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F4ED6755D5628F13C016EB /* Pods-AudioUnitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MMV46S9R3Q;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AudioUnitDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,6 +410,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,12 +426,14 @@
 		};
 		BEC1C0FD2C7F0E0F005BCFEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5D1A5677237847C1B2DBAA /* Pods-AudioUnitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MMV46S9R3Q;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AudioUnitDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,6 +441,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
